@@ -1,0 +1,25 @@
+{%extends 'main.html'%}
+{%block content%}
+<center><br><br>
+    <h2>Register Page</h2><br><br>
+    <form action="" method="post">
+        {%csrf_token%}
+        <label for="">Firstname : </label>
+        <input type="text" name="firstname"><br><br>
+
+        <label for="">Lastname : </label>
+        <input type="text" name="lastname"><br><br>
+
+        <label for="">Email : </label>
+        <input type="text" name="email"><br><br>
+
+        <label for="">Username : </label>
+        <input type="text" name="username"><br><br>
+
+        <label for="">Password : </label>
+        <input type="password" name="password"><br><br>
+
+        <input type="submit">
+    </form>
+</center>
+{%endblock content%}

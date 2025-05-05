@@ -1,0 +1,23 @@
+{%extends 'main.html'%}
+{%block content%}
+<center>
+    <h2 style="margin-top: 40px;">Update profile</h2>
+    <form action="" method="post" style="margin-top: 40px;">
+        {%csrf_token%}
+        <label for="">Firstname : </label>
+        <input type="text" value="{{request.user.first_name}}" name="firstname"><br><br>
+        
+        <label for="">Lastname :</label>
+        <input type="text" value="{{request.user.last_name}}" name="lastname"><br><br>
+        
+        <label for="">Email :</label>
+        <input type="text" value="{{request.user.email}}" name="email"><br><br>
+
+        <label for="">Username :</label>
+        <input type="text" value="{{request.user.username}}" name="username"><br><br>
+
+        <input type="submit">
+    
+    </form>
+</center>
+{%endblock content%}

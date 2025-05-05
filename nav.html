@@ -1,0 +1,48 @@
+<nav>
+    <h2>SHOPSPHERE</h2>
+   
+    {%if request.user.is_authenticated%}
+    <form action="" class="search">
+        <input type="text" name="query">
+        <input type="submit">
+    </form>
+    
+    <a href="{%url 'home'%}">Home</a>
+        <a href="{%url 'cart'%}">Cart</a>
+        <a href="{%url 'profile'%}">Profile - {{request.user}}</a>
+        <a href="{%url 'knowus'%}">Know Us</a>
+        <a href="{%url 'logout'%}">Logout</a>
+    {%else%}
+    
+    {%if login_nav%}
+        <a href="{%url 'home'%}">Home</a>
+        <a href="{%url 'login'%}">Login</a>
+        <a href="{%url 'register'%}">Register</a>
+        <a href="">Know Us</a>
+    {%else%}
+    <form action="" class="search">
+        <input type="text" name="query">
+        <input type="submit">
+    </form>
+    <a href="{%url 'home'%}">Home</a>
+    <a href="{%url 'login'%}">Login</a>
+        
+        <form action="">
+            <input type="submit" value="Trending" name="trending" class="trending">
+        </form>
+
+        <form action="">
+            <input type="submit" value="Sale" name="sale" class="sale">
+        </form>
+
+        <a href="">Know Us</a>
+        
+    {%endif%}
+    {%endif%}
+        
+       
+       
+    
+</nav>
+
+<!-- admin username=sachin , password=1234 -->

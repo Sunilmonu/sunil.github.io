@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+}
+.o{
+    text-decoration: none;
+    color: rgb(0, 60, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(135deg,rgb(0, 102, 255)20%,rgb(0, 174, 255)20%);
+    height: 80px;
+    h2{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        font-weight: 900;
+        font-style: oblique;
+        
+        background-image: linear-gradient(18deg,rgb(255, 0, 140),pink);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-style: oblique;
+        transition: 0.3s;
+    }
+    a:hover{
+        font-size: 23px;
+    }
+    .search{
+        [type='submit']{
+            background-color: white;
+            border-radius: 5px;
+        }
+        [type='text']{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: oblique;
+            font-weight: 600;
+            border: 1px solid black;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+    }
+}
+center{
+    h2{
+        font-family: sans-serif;
+        font-style: oblique;
+        font-weight: 600;
+    }
+}
+.trending{
+   border: 0px ;
+   background-color: transparent;
+   font-family: sans-serif;
+   font-size: 18px;
+   font-style: oblique;
+   font-weight: 600;
+   transition: 0.1s;
+}
+.trending:hover{
+    font-size: 25px;
+}
+
+.sale{
+   border: 0px ;
+   background-color: transparent;
+   font-family: sans-serif;
+   font-size: 18px;
+   font-style: oblique;
+   font-weight: 600;
+   transition: 0.1s;
+}
+.sale:hover{
+    font-size: 25px;
+}
+
+#categories{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: aqua;
+    input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+    }
+}
+
+#nav{
+   background-image: linear-gradient(rgb(116, 116, 116),rgb(119, 119, 119));
+    /* margin-top: 10px; */
+    height: 40px;
+    width: 90%;
+    margin-left: 70px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 7px  7px rgb(87, 87, 87);
+    a{
+        color: rgb(0, 0, 0);
+    }
+    a:hover{
+        text-shadow: 0px 0px 15px white;
+        font-size: 23px;
+    }
+}
+
+.td{
+    border: 7px solid rgb(0, 0, 0);
+    margin: 15px;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.1s;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    h3{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+#wel{
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;    
+    font-size: 30px;
+    text-shadow: 0px 1px 5px rgb(0, 102, 255);
+    font-style: oblique;
+}
+ 
+    .form{
+        box-shadow: 0 18px 18px  rgba(0, 0, 0, 0.753);
+        font-family: sans-serif;
+        border-radius: 5px;
+        width: 350px;
+        border:  1px solid black;
+        margin-top: 60px;
+        label{
+            font-weight: 600;
+        }
+        input{
+            
+            font-family: serif;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+    }
+
+form{
+    label{
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    input{
+        border-radius: 0px 9px 0px 9px;
+        border: 1px solid black;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+    }
+    input[type='submit']{
+       border: 0px;
+       
+       background-color: transparent;
+       font-weight: 600;
+    }
+}
+table{
+    th{
+        font-size: larger;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    td{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+.a{
+    color: blue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.c{
+    color: blue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.c:hover{
+    color: green;
+}
+.l{
+    color: blue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.l:hover{
+    color: red;
+}

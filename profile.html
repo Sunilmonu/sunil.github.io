@@ -1,0 +1,24 @@
+{%extends 'main.html'%}
+{%block content%}
+<center>
+    <h2 style="margin-top: 40px;">Profile</h2>
+    <table border="1px" style="margin-top: 40px;"cellpadding="20px" rules="all">
+        <tr>
+            <th>Firstname</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Date Joined</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>{{request.user.first_name}}</td>
+            <td>{{request.user}}</td>
+            <td>{{request.user.email}}</td>
+            <td>{{request.user.date_joined}}</td>
+            <td>
+                <a href="{%url 'updateprofile'%}" class="a">Update Profile</a> &nbsp;&nbsp;&nbsp;||&nbsp;&nbsp; <a href="{%url 'changepassword'%}" class="c">Change Password</a> &nbsp;&nbsp;&nbsp;|| &nbsp;&nbsp;<a href="{%url 'logout'%}" class="l">Logout</a>
+            </td>
+        </tr>
+    </table>
+</center>
+{%endblock content%}
